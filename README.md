@@ -71,6 +71,10 @@ The project targets iOS 26 and later and has no third-party dependencies. Live c
 
 [ScreenCheck-Complete-Project.md](ScreenCheck-Complete-Project.md) is the authoritative handoff document. It records the original product intention, intended users, requirements, workflows, LiDAR and non-LiDAR strategy, real-device testing guidance, UX system, processing architecture, planner mathematics, privacy, build instructions, validation, limitations, roadmap, release checklist, and project artifact map.
 
+## Product review and roadmap
+
+[ScreenCheck-Product-Review.md](ScreenCheck-Product-Review.md) (October 2026) reviews the product against competing apps, Apple platform limits and current matting research, and sets out a prioritised roadmap.
+
 ## Validation
 
 `ScreenCheckTests` contains 35 tests covering the analytic point-to-polygon form factor, tangent-plane clipping, spill falloff, lighting evenness, normalized and sampled chroma, aspect-fill tap mapping, Auto Key, bare-screen measurement, sensor geometry, units, exposure-aware spill, green/blue switching, Smart Background fallback order/readiness, LiDAR calibration math, bounded plate tracking, persistence, responsive layout, performance profiles, latest-frame preview retention, bounded mask history, drawable-resolution limits, LiDAR/non-LiDAR processing routes and high-quality package structure. The production app and XCTest bundle build successfully for generic arm64 iOS hardware. Live camera behavior should still be profiled on a physical device because ARKit camera and LiDAR input are unavailable in the simulator.
